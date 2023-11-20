@@ -43,7 +43,7 @@ services:
     volumes:
       - /home/codewithneeraj/certificate/kafka_cert/server.keystore.jks:/opt/bitnami/kafka/config/certs/kafka.keystore.jks:ro
       - /home/codewithneeraj/certificate/kafka_cert/server.truststore.jks:/opt/bitnami/kafka/config/certs/kafka.truststore.jks:ro
-      # - /home/codewithneeraj/container-data/kafka:/bitnami/kafka/data
+      - /home/codewithneeraj/container-data/kafka:/bitnami/kafka/data
 
     depends_on:
       - cwn-basic-zookeeper
